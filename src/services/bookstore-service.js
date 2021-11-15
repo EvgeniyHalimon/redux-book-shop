@@ -14,3 +14,19 @@ export default class BookstoreService{
         ]
     }
 }
+
+/* {
+    id:1,
+    title: 'wow such book',
+    author: ' doge'
+},
+{
+    id:2,
+    title: 'war crime',
+    author: ' big floppa'
+},
+{
+    id:3,
+    title: 'make me hamppymn',
+    author: ' cheems'
+}, */
