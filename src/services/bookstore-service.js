@@ -1,17 +1,28 @@
 export default class BookstoreService{
+
+    data = [
+        {
+            id:1,
+            title: 'Book_Name',
+            author: 'Fabulous Hori',
+            price: 35,
+            coverImage: 'https://m.media-amazon.com/images/I/51Lb4J6645L._SL500_.jpg'
+        },
+        {
+            id:2,
+            title: 'Book_Name_2',
+            author: 'Fabulous Jaime',
+            price: 35,
+            coverImage: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550966912l/40148573._SX318_.jpg'
+        },
+    ]
+    
     getBooks(){
-        return [
-            {
-                id:1,
-                title: 'Book_Name',
-                author: 'Fabulous Hori'
-            },
-            {
-                id:2,
-                title: 'Book_Name_2',
-                author: 'Fabulous Jaime'
-            },
-        ]
+        return new Promise((resolve) => {
+            setTimeout(() =>{
+                resolve(this.data)
+            },700)
+        })
     }
 }
 
