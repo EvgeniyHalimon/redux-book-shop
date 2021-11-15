@@ -19,10 +19,10 @@ const booksError = (error) => {
 }
 
 const fetchBooks = (bookstoreService, dispatch) => () => {
-    dispatch(booksRequested())
+    dispatch(booksRequested());
     bookstoreService.getBooks()
-    .then(data => dispatch(booksLoaded(data)))
-    .catch((error) => dispatch(booksError(error)))
+        .then((data )=> dispatch(booksLoaded(data)))
+        .catch((error) => dispatch(booksError(error)))
 }
 
 export {

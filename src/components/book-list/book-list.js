@@ -64,7 +64,8 @@ const mapStateToProps = ({books, loading, error}) => {
     booksError
 } */
 
-const mapDispatchToProps = (dispatch, /* ownProps */ bookstoreService) => {
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const mapDispatchToProps = ( /* ownProps */ dispatch, {bookstoreService}) => {
     /* const {bookstoreService} = ownProps */
     return{
         fetchBooks: fetchBooks(bookstoreService, dispatch)
