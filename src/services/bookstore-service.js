@@ -5,7 +5,7 @@ export default class BookstoreService{
             id:1,
             title: 'Book_Name',
             author: 'Fabulous Hori',
-            price: 35,
+            price: 60,
             coverImage: 'https://m.media-amazon.com/images/I/51Lb4J6645L._SL500_.jpg'
         },
         {
