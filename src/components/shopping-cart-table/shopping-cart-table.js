@@ -1,12 +1,13 @@
 import React from 'react';
 import './shopping-cart-table.css'
 import { connect } from 'react-redux';
+import shortid from 'shortid'
 
 const ShoppingCartTable = ({items, total, onIncrease, onDecrease, onDelete}) => {
     const renderRow = (item, idx) => {
         const {id, name, count, total} = item
         return(
-            <tr key={id}>
+            <tr key={shortid.generate()}>
                 <td>{idx + 1}</td> 
                 <td>{name}</td>
                 <td>{count}</td>
